@@ -1,3 +1,4 @@
+
 import { PORT } from './config.js'
 import { bootstrapDB } from './DB/conniction.db.js'
 import { globalErrorhandling } from './middleware/index.js'
@@ -19,3 +20,8 @@ app.all("{/*dummy}", (req, res) => {
 })
 
 app.use(globalErrorhandling)
+
+//
+// const cipher = await encryption("lol")
+// const plain = await decryption(cipher);
+// console.log(plain);
